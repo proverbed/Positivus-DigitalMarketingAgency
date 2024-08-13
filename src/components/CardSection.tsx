@@ -48,7 +48,7 @@ const CardSection = () => {
 
   return (
     <div className="my-16">
-      <div className="flex flex-wrap items-center justify-center gap-10">
+      <div className="flex flex-wrap items-center justify-center sm:gap-8 gap-10">
         {companies.map((element) => (
           <Card
             title1={element.title1}

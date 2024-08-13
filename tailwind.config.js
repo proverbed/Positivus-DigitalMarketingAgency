@@ -9,6 +9,8 @@ export default {
         neutral: "#F3F3F3",
       },
       width: {
+        100: "25rem",
+        110: "27.5rem",
         128: "32rem",
       },
     },
