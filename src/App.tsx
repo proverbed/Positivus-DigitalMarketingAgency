@@ -3,6 +3,9 @@ import Hero from "./components/Hero";
 import CompanySection from "./components/CompanySection";
 import Heading from "./components/Heading";
 import CardSection from "./components/CardSection";
+import ProposalCard from "./components/ProposalCard";
+import TeamCardSection from "./components/TeamCardSection";
+import CaseStudiesSection from "./components/CaseStudiesSection";
 
 const App = () => {
   return (
@@ -18,6 +21,34 @@ const App = () => {
           line2="help businesses grow and succeed online. These services include:"
         />
         <CardSection />
+        <ProposalCard />
+        <Heading
+          title="Case Studies"
+          line1="Explore Real-Life Examples of Our Proven Digital Marketing"
+          line2="Success through Our Case Studies"
+        />
+        <CaseStudiesSection />
+        <Heading
+          title="Our Working Process"
+          line1="Step-by-Step Guide to Achieving"
+          line2="Your Business Goals"
+        />
+        <Heading
+          title="Team"
+          line1="Meet the skilled and experienced team behind our"
+          line2="successful digital marketing strategies"
+        />
+        <TeamCardSection />
+        <Heading
+          title="Testimonials"
+          line1="Hear from Our Satisfied Clients: Read Our Testimonials"
+          line2="to Learn More about Our Digital Marketing Services"
+        />
+        <Heading
+          title="Contact Us"
+          line1="Connect with Us: Let's Discuss Your"
+          line2="Digital Marketing Needs"
+        />
       </div>
     </div>
   );
