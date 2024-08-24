@@ -6,6 +6,7 @@ import CardSection from "./components/CardSection";
 import ProposalCard from "./components/ProposalCard";
 import TeamCardSection from "./components/TeamCardSection";
 import CaseStudiesSection from "./components/CaseStudiesSection";
+import AccordionSection from "./components/AccordionSection";
 
 const App = () => {
   return (
@@ -33,6 +34,7 @@ const App = () => {
           line1="Step-by-Step Guide to Achieving"
           line2="Your Business Goals"
         />
+        <AccordionSection />
         <Heading
           title="Team"
           line1="Meet the skilled and experienced team behind our"
