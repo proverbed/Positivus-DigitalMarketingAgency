@@ -7,6 +7,7 @@ import ProposalCard from "./components/ProposalCard";
 import TeamCardSection from "./components/TeamCardSection";
 import CaseStudiesSection from "./components/CaseStudiesSection";
 import AccordionSection from "./components/AccordionSection";
+import ContactUsSection from "./components/ContactUsSection";
 
 const App = () => {
   return (
@@ -51,6 +52,7 @@ const App = () => {
           line1="Connect with Us: Let's Discuss Your"
           line2="Digital Marketing Needs"
         />
+        <ContactUsSection />
       </div>
     </div>
   );
