@@ -23,11 +23,13 @@ const Accordion = ({ sub_title, title, children }: Props) => {
         <div className="w-full relative border-b border-black pb-8 mb-8">
           <div className="flex items-center" onClick={toggleAccordion}>
             <div className="lg:text-5xl md:text-3xl text-2xl ">{sub_title}</div>
-            <div className="ml-5 lg:text-2xl md:text-xl text-lg">{title}</div>
+            <div className="ml-5 lg:text-2xl md:text-xl text-md md:font-normal ">
+              {title}
+            </div>
             <img
               src={open_icon}
               alt="open"
-              className="lg:w-14 md:w-12 w-10 absolute right-0"
+              className="lg:w-14 md:w-12 w-8 absolute right-0"
             ></img>
           </div>
         </div>
@@ -44,11 +46,13 @@ const Accordion = ({ sub_title, title, children }: Props) => {
       <div className="w-full relative">
         <div className="flex items-center" onClick={toggleAccordion}>
           <div className="lg:text-5xl md:text-3xl text-2xl ">{sub_title}</div>
-          <div className="ml-5 lg:text-2xl md:text-xl text-lg">{title}</div>
+          <div className="ml-5 lg:text-2xl md:text-xl text-md md:font-normal ">
+            {title}
+          </div>
           <img
             src={close_icon}
             alt="close"
-            className="lg:w-14 md:w-12 w-10 absolute right-0"
+            className="lg:w-14 md:w-12 w-8 absolute right-0"
           ></img>
         </div>
       </div>
