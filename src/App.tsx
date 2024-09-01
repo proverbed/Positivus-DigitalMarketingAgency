@@ -9,6 +9,7 @@ import CaseStudiesSection from "./components/CaseStudiesSection";
 import AccordionSection from "./components/AccordionSection";
 import ContactUsSection from "./components/ContactUsSection";
 import Footer from "./components/Footer";
+import TestimonialSection from "./components/TestimonialSection";
 
 const App = () => {
   return (
@@ -48,6 +49,7 @@ const App = () => {
           line1="Hear from Our Satisfied Clients: Read Our Testimonials"
           line2="to Learn More about Our Digital Marketing Services"
         />
+        <TestimonialSection />
         <Heading
           title="Contact Us"
           line1="Connect with Us: Let's Discuss Your"
