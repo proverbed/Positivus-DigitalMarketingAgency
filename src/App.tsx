@@ -8,6 +8,7 @@ import TeamCardSection from "./components/TeamCardSection";
 import CaseStudiesSection from "./components/CaseStudiesSection";
 import AccordionSection from "./components/AccordionSection";
 import ContactUsSection from "./components/ContactUsSection";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -53,6 +54,7 @@ const App = () => {
           line2="Digital Marketing Needs"
         />
         <ContactUsSection />
+        <Footer />
       </div>
     </div>
   );

@@ -1,10 +1,18 @@
 type Props = {
   title: string;
+  type: Type;
 };
 
-const Button = ({ title }: Props) => {
+export enum Type {
+  Primary,
+  Secondary,
+}
+
+const Button = ({ title, type = Type.Primary }: Props) => {
   return (
-    <div className="p-4 px-8 bg-primary text-white rounded-xl text-center">
+    <div
+      className={`p-4 px-8 ${type == Type.Primary ? "bg-primary" : type == Type.Secondary ? "bg-secondary" : ""} ${type == Type.Primary ? "text-white" : type == Type.Secondary ? "text-black" : ""}  rounded-xl text-center`}
+    >
       {title}
     </div>
   );
