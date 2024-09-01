@@ -13,7 +13,7 @@ const Button = ({ title, type = Type.Primary }: Props) => {
     <div
       className={`p-4 px-8 ${type == Type.Primary ? "bg-primary" : type == Type.Secondary ? "bg-secondary" : ""} ${type == Type.Primary ? "text-white" : type == Type.Secondary ? "text-black" : ""}  rounded-xl text-center`}
     >
-      {title}
+      <button>{title}</button>
     </div>
   );
 };
