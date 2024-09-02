@@ -3,7 +3,7 @@ import { useState } from "react";
 import icon from "../assets/Icon.png";
 import { navItems } from "../constants";
 
-const Navbar = () => {
+function Navbar() {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
 
   const toggleNavbar = () => {
@@ -56,6 +56,6 @@ const Navbar = () => {
       </div>
     </nav>
   );
-};
+}
 
 export default Navbar;

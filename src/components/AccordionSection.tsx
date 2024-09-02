@@ -1,42 +1,42 @@
 import Accordion from "./Accordion";
 
-const AccordionSection = () => {
+function AccordionSection() {
   const items = [
     {
-      sub_title: "01",
-      title: "Consultation",
+      sub_title: '01',
+      title: 'Consultation',
       description:
-        "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
+        'During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.',
     },
     {
-      sub_title: "02",
-      title: "Research and Strategy Development",
+      sub_title: '02',
+      title: 'Research and Strategy Development',
       description:
-        "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
+        'During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.',
     },
     {
-      sub_title: "03",
-      title: "Implementation",
+      sub_title: '03',
+      title: 'Implementation',
       description:
-        "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
+        'During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.',
     },
     {
-      sub_title: "04",
-      title: "Monitoring and Optimization",
+      sub_title: '04',
+      title: 'Monitoring and Optimization',
       description:
-        "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
+        'During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.',
     },
     {
-      sub_title: "05",
-      title: "Reporting and Communication",
+      sub_title: '05',
+      title: 'Reporting and Communication',
       description:
-        "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
+        'During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.',
     },
     {
-      sub_title: "06",
-      title: "Continual Improvement",
+      sub_title: '06',
+      title: 'Continual Improvement',
       description:
-        "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
+        'During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.',
     },
   ];
 
@@ -53,6 +53,6 @@ const AccordionSection = () => {
       </div>
     </div>
   );
-};
+}
 
 export default AccordionSection;

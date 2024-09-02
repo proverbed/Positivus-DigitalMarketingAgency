@@ -6,41 +6,41 @@ import content from "../assets/content.png";
 import analytics from "../assets/analytics.png";
 import Card, { colorEnum } from "./Card";
 
-const CardSection = () => {
+function CardSection() {
   const companies = [
     {
-      title1: "Search Engine",
-      title2: "optimization",
+      title1: 'Search Engine',
+      title2: 'optimization',
       color: colorEnum.Neutral,
       image: seo,
     },
     {
-      title1: "Pay-per-click",
-      title2: "advertising",
+      title1: 'Pay-per-click',
+      title2: 'advertising',
       color: colorEnum.Primary,
       image: ppc,
     },
     {
-      title1: "Social Media",
-      title2: "Marketing",
+      title1: 'Social Media',
+      title2: 'Marketing',
       color: colorEnum.Secondary,
       image: smm,
     },
     {
-      title1: "Email",
-      title2: "Marketing",
+      title1: 'Email',
+      title2: 'Marketing',
       color: colorEnum.Neutral,
       image: email,
     },
     {
-      title1: "Content",
-      title2: "Creation",
+      title1: 'Content',
+      title2: 'Creation',
       color: colorEnum.Primary,
       image: content,
     },
     {
-      title1: "Analytics and",
-      title2: "Tracking",
+      title1: 'Analytics and',
+      title2: 'Tracking',
       color: colorEnum.Secondary,
       image: analytics,
     },
@@ -60,6 +60,6 @@ const CardSection = () => {
       </div>
     </div>
   );
-};
+}
 
 export default CardSection;

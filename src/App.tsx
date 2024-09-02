@@ -11,7 +11,7 @@ import ContactUsSection from "./components/ContactUsSection";
 import Footer from "./components/Footer";
 import TestimonialSection from "./components/TestimonialSection";
 
-const App = () => {
+function App() {
   return (
     <div>
       <Navbar />
@@ -60,6 +60,6 @@ const App = () => {
       </div>
     </div>
   );
-};
+}
 
 export default App;

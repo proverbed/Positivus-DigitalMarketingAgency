@@ -1,7 +1,7 @@
 import Button from "./Button";
 import proposal from "../assets/proposal.png";
 
-const ProposalCard = () => {
+function ProposalCard() {
   return (
     <div className="m-16 relative max-[425px]:m-2 ">
       <div className="flex flex-row rounded-3xl bg-neutral px-15 py-15 max-[425px]:px-8 max-[425px]:py-8">
@@ -27,6 +27,6 @@ const ProposalCard = () => {
       </div>
     </div>
   );
-};
+}
 
 export default ProposalCard;

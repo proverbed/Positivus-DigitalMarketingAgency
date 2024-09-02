@@ -1,6 +1,6 @@
 import arrowBG from "../assets/arrow-bg.png";
 
-const CaseStudiesSection = () => {
+function CaseStudiesSection() {
   return (
     <>
       <div className="rounded-3xl md:m-9 m-16 md:py-9 py-16 bg-primary text-white hidden md:block">
@@ -80,6 +80,6 @@ const CaseStudiesSection = () => {
       </div>
     </>
   );
-};
+}
 
 export default CaseStudiesSection;

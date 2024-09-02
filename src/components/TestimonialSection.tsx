@@ -1,8 +1,8 @@
-import netflix from "./../assets/company-logo-netflix.png";
-import amazon from "./../assets/company-logo-amazon.png";
-import zoom from "./../assets/company-logo-zoom.png";
+import netflix from "../assets/company-logo-netflix.png";
+import amazon from "../assets/company-logo-amazon.png";
+import zoom from "../assets/company-logo-zoom.png";
 
-const TestimonialSection = () => {
+function TestimonialSection() {
   return (
     <>
       <div className="lg:my-16 my-8 mx-4">
@@ -18,7 +18,7 @@ const TestimonialSection = () => {
                 <div className="font-thin">Full Stack Developer @Netflix</div>
               </div>
               <div className="w-1/2 flex justify-end">
-                <img src={netflix} className="w-32"></img>
+                <img src={netflix} className="w-32" />
               </div>
             </div>
           </div>
@@ -33,7 +33,7 @@ const TestimonialSection = () => {
                 <div className="font-thin">Graphic Designer, @Amazon</div>
               </div>
               <div className="w-1/2 flex justify-end">
-                <img src={amazon} className="w-32"></img>
+                <img src={amazon} className="w-32" />
               </div>
             </div>
           </div>
@@ -44,7 +44,7 @@ const TestimonialSection = () => {
             <br />I can't imagine going back to life before it!"
             <div className="flex flex-wrap items-center">
               <div className="w-full flex justify-center pt-10 pb-5">
-                <img src={zoom} className="w-32"></img>
+                <img src={zoom} className="w-32" />
               </div>
               <div className="w-full">
                 <div className="text-xl font-bold">Emma Roberts</div>
@@ -56,6 +56,6 @@ const TestimonialSection = () => {
       </div>
     </>
   );
-};
+}
 
 export default TestimonialSection;

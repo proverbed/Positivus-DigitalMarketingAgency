@@ -2,7 +2,7 @@ import { Input, Textarea, Radio } from "@material-tailwind/react";
 import contact_us_illustration from "../assets/Illustration_contact_us.png";
 import Button from "./Button";
 
-const ContactUsSection = () => {
+function ContactUsSection() {
   return (
     <>
       <div className="bg-neutral rounded-3xl lg:my-16 my-8 mx-4">
@@ -43,6 +43,6 @@ const ContactUsSection = () => {
       </div>
     </>
   );
-};
+}
 
 export default ContactUsSection;

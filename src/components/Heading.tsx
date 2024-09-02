@@ -4,7 +4,7 @@ type Props = {
   line2: string;
 };
 
-const Heading = ({ title, line1, line2 }: Props) => {
+function Heading({ title, line1, line2 }: Props) {
   return (
     <div className="lg:my-16 my-8 mx-4">
       <div className="flex gap-8 items-center flex-col sm:flex-row">
@@ -19,6 +19,6 @@ const Heading = ({ title, line1, line2 }: Props) => {
       </div>
     </div>
   );
-};
+}
 
 export default Heading;

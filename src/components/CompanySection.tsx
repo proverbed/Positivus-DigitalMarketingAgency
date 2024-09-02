@@ -5,7 +5,7 @@ import netflix from "../assets/company-logo-netflix.png";
 import notion from "../assets/company-logo-notion.png";
 import zoom from "../assets/company-logo-zoom.png";
 
-const CompanySection = () => {
+function CompanySection() {
   const companies = [
     {
       image: amazon,
@@ -31,11 +31,11 @@ const CompanySection = () => {
     <div className="my-16">
       <div className="flex flex-wrap items-center justify-center gap-8">
         {companies.map((element) => (
-          <img className="px-4" src={element.image}></img>
+          <img className="px-4" src={element.image} />
         ))}
       </div>
     </div>
   );
-};
+}
 
 export default CompanySection;

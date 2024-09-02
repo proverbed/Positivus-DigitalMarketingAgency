@@ -1,4 +1,4 @@
-const FlexCol = () => {
+function FlexCol() {
   return (
     <div className="m-16">
       <div className="flex flex-col">
@@ -8,6 +8,6 @@ const FlexCol = () => {
       </div>
     </div>
   );
-};
+}
 
 export default FlexCol;

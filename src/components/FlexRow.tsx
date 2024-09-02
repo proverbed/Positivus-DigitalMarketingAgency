@@ -1,4 +1,4 @@
-const FlexRow = () => {
+function FlexRow() {
   return (
     <div className="m-16">
       <div className="flex flex-row ">
@@ -8,6 +8,6 @@ const FlexRow = () => {
       </div>
     </div>
   );
-};
+}
 
 export default FlexRow;
