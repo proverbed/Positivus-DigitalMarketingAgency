@@ -1,10 +1,10 @@
-import { Input } from '@material-tailwind/react';
-import icon from '../assets/icon-white.png';
-import { navItems } from '../constants';
-import facebook_icon from '../assets/facebook.png';
-import linkedin_icon from '../assets/linkedIn.png';
-import twitter_icon from '../assets/twitter.png';
-import Button, { Type } from "./Button";
+import icon from "../assets/icon-white.png";
+import { navItems } from "../constants";
+import facebookIcon from "../assets/facebook.png";
+import linkedinIcon from "../assets/linkedIn.png";
+import twitterIcon from "../assets/twitter.png";
+import Button from "./Button.tsx";
+import Type from "../Type.ts";
 
 function Footer() {
   return (
@@ -24,9 +24,9 @@ function Footer() {
           </ul>
         </div>
         <div className="flex-row gap-4 pt-9 md:pt-0 hidden md:flex">
-          <img src={linkedin_icon} alt="linkedIn icon" className="w-7 h-7" />
-          <img src={facebook_icon} alt="facebook icon" className="w-7 h-7" />
-          <img src={twitter_icon} alt="twitter icon" className="w-7 h-7" />
+          <img src={linkedinIcon} alt="linkedIn icon" className="w-7 h-7" />
+          <img src={facebookIcon} alt="facebook icon" className="w-7 h-7" />
+          <img src={twitterIcon} alt="twitter icon" className="w-7 h-7" />
         </div>
       </div>
 
@@ -61,9 +61,9 @@ function Footer() {
 
       <div className="flex flex-col items-center pb-9 md:hidden">
         <div className="flex flex-row gap-4">
-          <img src={linkedin_icon} alt="linkedIn icon" className="w-7 h-7" />
-          <img src={facebook_icon} alt="facebook icon" className="w-7 h-7" />
-          <img src={twitter_icon} alt="twitter icon" className="w-7 h-7" />
+          <img src={linkedinIcon} alt="linkedIn icon" className="w-7 h-7" />
+          <img src={facebookIcon} alt="facebook icon" className="w-7 h-7" />
+          <img src={twitterIcon} alt="twitter icon" className="w-7 h-7" />
         </div>
       </div>
 

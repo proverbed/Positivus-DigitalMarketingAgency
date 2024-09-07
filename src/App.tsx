@@ -1,15 +1,15 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import CompanySection from "./components/CompanySection";
-import Heading from "./components/Heading";
-import CardSection from "./components/CardSection";
-import ProposalCard from "./components/ProposalCard";
-import TeamCardSection from "./components/TeamCardSection";
-import CaseStudiesSection from "./components/CaseStudiesSection";
-import AccordionSection from "./components/AccordionSection";
-import ContactUsSection from "./components/ContactUsSection";
-import Footer from "./components/Footer";
-import TestimonialSection from "./components/TestimonialSection";
+import Navbar from "./components/Navbar.tsx";
+import Hero from "./components/Hero.tsx";
+import CompanySection from "./components/CompanySection.tsx";
+import Heading from "./components/Heading.tsx";
+import CardSection from "./components/CardSection.tsx";
+import ProposalCard from "./components/ProposalCard.tsx";
+import TeamCardSection from "./components/TeamCardSection.tsx";
+import CaseStudiesSection from "./components/CaseStudiesSection.tsx";
+import AccordionSection from "./components/AccordionSection.tsx";
+import ContactUsSection from "./components/ContactUsSection.tsx";
+import Footer from "./components/Footer.tsx";
+import TestimonialSection from "./components/TestimonialSection.tsx";
 
 function App() {
   return (
