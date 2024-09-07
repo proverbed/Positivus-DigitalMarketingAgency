@@ -8,23 +8,23 @@ import zoom from "../assets/company-logo-zoom.png";
 function CompanySection() {
   const companies = [
     {
-      image: amazon,
+      image: amazon
     },
     {
-      image: dribble,
+      image: dribble
     },
     {
-      image: hubspot,
+      image: hubspot
     },
     {
-      image: netflix,
+      image: netflix
     },
     {
-      image: notion,
+      image: notion
     },
     {
-      image: zoom,
-    },
+      image: zoom
+    }
   ];
 
   return (

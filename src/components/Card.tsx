@@ -15,20 +15,20 @@ type Props = {
 };
 
 function Card({
- title1, title2, color, image 
+  title1, title2, color, image
 }: Props) {
   return (
     <div
-      className={`sm:w-100 w-64 h-64 flex sm:flex-row flex-col rounded-3xl gap-0 ${color === colorEnum.Neutral ? 'bg-neutral' : color === colorEnum.Primary ? 'bg-secondary' : 'bg-primary'} px-10 py-10 border border-black shadow-[0px_3px_0px_0px_rgba(0,0,0)]`}
+      className={`sm:w-100 w-64 h-64 flex sm:flex-row flex-col rounded-3xl gap-0 ${color === colorEnum.Neutral ? "bg-neutral" : color === colorEnum.Primary ? "bg-secondary" : "bg-primary"} px-10 py-10 border border-black shadow-[0px_3px_0px_0px_rgba(0,0,0)]`}
     >
       <div className="relative w-full">
         <h1
-          className={`w-fit text-xl font-medium ${color === colorEnum.Neutral ? 'bg-secondary' : 'bg-white'}  rounded-md px-2 py-1`}
+          className={`w-fit text-xl font-medium ${color === colorEnum.Neutral ? "bg-secondary" : "bg-white"}  rounded-md px-2 py-1`}
         >
           {title1}
         </h1>
         <h1
-          className={`w-fit text-xl font-medium ${color === colorEnum.Neutral ? 'bg-secondary' : 'bg-white'}  rounded-md px-2 py-1`}
+          className={`w-fit text-xl font-medium ${color === colorEnum.Neutral ? "bg-secondary" : "bg-white"}  rounded-md px-2 py-1`}
         >
           {title2}
         </h1>
@@ -39,7 +39,7 @@ function Card({
               alt="arrow"
             />
             <div
-              className={`${color === colorEnum.Secondary ? 'text-white' : 'text-black'} pl-2 hidden sm:block`}
+              className={`${color === colorEnum.Secondary ? "text-white" : "text-black"} pl-2 hidden sm:block`}
             >
               Learn more
             </div>
@@ -60,7 +60,7 @@ function Card({
             alt="arrow"
           />
           <div
-            className={`${color === colorEnum.Secondary ? 'text-white' : 'text-black'} pl-2 hidden sm:block`}
+            className={`${color === colorEnum.Secondary ? "text-white" : "text-black"} pl-2 hidden sm:block`}
           >
             Learn more
           </div>

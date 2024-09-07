@@ -8,7 +8,7 @@ type Props = {
 };
 
 function TeamCard({
- name, position, image, description 
+  name, position, image, description
 }: Props) {
   return (
     <div className="w-96 flex sm:flex-row flex-col rounded-3xl gap-0 px-10 py-10 border border-black shadow-[0px_3px_0px_0px_rgba(0,0,0)]">
