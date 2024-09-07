@@ -1,10 +1,10 @@
 import icon from "../assets/icon-white.png";
-import { navItems } from "../constants";
 import facebookIcon from "../assets/facebook.png";
 import linkedinIcon from "../assets/linkedIn.png";
 import twitterIcon from "../assets/twitter.png";
 import Button from "./Button.tsx";
 import Type from "../Type.ts";
+import navItems from "../constants/index.ts";
 
 function Footer() {
   return (
@@ -16,8 +16,8 @@ function Footer() {
         </div>
         <div className="pt-9 md:pt-0">
           <ul className="flex md:flex-row flex-col gap-6">
-            {navItems.map((item, index) => (
-              <li key={index} className="md:underline no-underline">
+            {navItems.map((item) => (
+              <li key={item.id} className="md:underline no-underline">
                 <a href={item.href}>{item.label}</a>
               </li>
             ))}
