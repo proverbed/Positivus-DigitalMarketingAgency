@@ -1,6 +1,12 @@
-enum Type {
+enum TypeEnum {
   Primary,
   Secondary,
 }
 
-export default Type;
+enum ColorEnum {
+  Primary = 0,
+  Secondary = 1,
+  Neutral = 2,
+}
+
+export { TypeEnum, ColorEnum };

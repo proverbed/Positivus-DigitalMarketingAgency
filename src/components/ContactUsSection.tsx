@@ -1,6 +1,7 @@
 import { Input, Textarea, Radio } from "@material-tailwind/react";
-import contact_us_illustration from "../assets/Illustration_contact_us.png";
-import Button from "./Button";
+import contactUsIllustration from "../assets/Illustration_contact_us.png";
+import Button from "./Button.tsx";
+import { TypeEnum } from "../Type.ts";
 
 function ContactUsSection() {
   return (
@@ -28,18 +29,18 @@ function ContactUsSection() {
                 <Input label="Email" required />
                 <Textarea label="Message" />
                 <div className="md:block hidden">
-                  <Button title="Send a message" />
+                  <Button title="Send a message" type={TypeEnum.Primary} />
                 </div>
               </div>
             </div>
           </div>
           <div className="w-fit">
-            <img src={contact_us_illustration} className="md:block hidden" />
+            <img src={contactUsIllustration} className="md:block hidden" alt="contact us illustration" />
           </div>
         </div>
       </div>
       <div className="lg:my-16 my-8 mx-4 md:hidden block">
-        <Button title="Send a message" />
+        <Button title="Send a message" type={TypeEnum.Primary} />
       </div>
     </>
   );

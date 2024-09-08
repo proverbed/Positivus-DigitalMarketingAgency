@@ -7,7 +7,7 @@ function ProposalCard() {
       <div className="flex flex-row rounded-3xl bg-neutral px-15 py-15 max-[425px]:px-8 max-[425px]:py-8">
         <div className="md:w-1/2 w-full">
           <h1 className="text-2xl sm:text-3xl font-medium pb-6">
-            Let's make things happen
+            Let&rsquo;s make things happen
           </h1>
           <p className="pb-6">
             Contact us today to learn more about how our digital marketing

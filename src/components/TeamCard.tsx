@@ -15,7 +15,7 @@ function TeamCard({
       <div className="flex flex-col">
         <div>
           <div className="flex flex-row border-b border-black pb-7 relative">
-            <img src={image} alt="team image" className="h-24 mr-5" />
+            <img src={image} alt="team" className="h-24 mr-5" />
             <div className="content-end">
               <div className="font-bold">{name}</div>
               <div>{position}</div>

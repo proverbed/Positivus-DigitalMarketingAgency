@@ -12,6 +12,8 @@ module.exports = {
     parser: "@typescript-eslint/parser",
     plugins: ["react-refresh"],
     rules: {
+        "no-shadow": "off",
+        "@typescript-eslint/no-shadow": ["error"],
         "react/jsx-one-expression-per-line": "off",
         "comma-dangle": ["error", "never"],
         quotes: "off",

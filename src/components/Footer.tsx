@@ -3,8 +3,8 @@ import facebookIcon from "../assets/facebook.png";
 import linkedinIcon from "../assets/linkedIn.png";
 import twitterIcon from "../assets/twitter.png";
 import Button from "./Button.tsx";
-import Type from "../Type.ts";
 import navItems from "../constants/index.ts";
+import { TypeEnum } from "../Type.ts";
 
 function Footer() {
   return (
@@ -53,7 +53,7 @@ function Footer() {
               />
             </div>
             <div className="w-full md:w-1/2 text-xs h-14">
-              <Button title="Subscribe to news" type={Type.Secondary} />
+              <Button title="Subscribe to news" type={TypeEnum.Secondary} />
             </div>
           </div>
         </div>

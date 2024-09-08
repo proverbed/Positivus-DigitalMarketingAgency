@@ -10,6 +10,7 @@ import Button from "./Button.tsx";
 function TeamCardSection() {
   const teams = [
     {
+      id: 'john.smith',
       name: "John Smith",
       position: "CEO and Founder",
       description:
@@ -17,6 +18,7 @@ function TeamCardSection() {
       image: JohnSmith
     },
     {
+      id: 'jane.doe',
       name: "Jane Doe",
       position: "Director of Operations",
       description:
@@ -24,6 +26,7 @@ function TeamCardSection() {
       image: JaneDoe
     },
     {
+      id: 'michael.brown',
       name: "Michael Brown",
       position: "Senior SEO Specialist",
       description:
@@ -31,6 +34,7 @@ function TeamCardSection() {
       image: MichaelBrown
     },
     {
+      id: 'emily.johnson',
       name: "Emily Johnson",
       position: "PPC Manager",
       description:
@@ -38,6 +42,7 @@ function TeamCardSection() {
       image: EmilyJohnson
     },
     {
+      id: "brian.williams",
       name: "Brian Williams",
       position: "Social Media Specialist",
       description:
@@ -45,6 +50,7 @@ function TeamCardSection() {
       image: BrianWilliams
     },
     {
+      id: "Sarah.Kim",
       name: "Sarah Kim",
       position: "Content Creator",
       description:
@@ -58,6 +64,7 @@ function TeamCardSection() {
       <div className="flex flex-row flex-wrap justify-center gap-10 sm:gap-8">
         {teams.map((element) => (
           <TeamCard
+            key={element.id}
             name={element.name}
             position={element.position}
             description={element.description}

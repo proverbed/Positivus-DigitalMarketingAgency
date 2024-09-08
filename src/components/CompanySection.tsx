@@ -31,7 +31,7 @@ function CompanySection() {
     <div className="my-16">
       <div className="flex flex-wrap items-center justify-center gap-8">
         {companies.map((element) => (
-          <img className="px-4" src={element.image} />
+          <img className="px-4" src={element.image} alt="logo" key={element.image} />
         ))}
       </div>
     </div>

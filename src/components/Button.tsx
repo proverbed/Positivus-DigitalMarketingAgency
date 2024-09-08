@@ -1,14 +1,30 @@
-import Type from "../Type.ts";
+import { TypeEnum } from "../Type.ts";
 
 type Props = {
   title: string;
-  type: Type;
+  type: TypeEnum;
 };
 
-function Button({ title, type = Type.Primary }: Props) {
+function Button({ title, type = TypeEnum.Primary }: Props) {
+  let bgColor;
+  let textColor;
+  switch (type) {
+    case TypeEnum.Primary:
+      bgColor = 'bg-primary';
+      textColor = 'text-white';
+      break;
+    case TypeEnum.Secondary:
+      bgColor = 'bg-secondary';
+      textColor = 'text-black';
+      break;
+    default:
+      bgColor = '';
+      textColor = '';
+      break;
+  }
   return (
     <div
-      className={`p-4 px-8 ${type == Type.Primary ? "bg-primary" : type == Type.Secondary ? "bg-secondary" : ""} ${type == Type.Primary ? "text-white" : type == Type.Secondary ? "text-black" : ""}  rounded-xl text-center`}
+      className={`p-4 px-8 ${bgColor} ${textColor} rounded-xl text-center`}
     >
       <button type="button">{title}</button>
     </div>

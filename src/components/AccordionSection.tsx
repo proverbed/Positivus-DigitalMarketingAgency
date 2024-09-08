@@ -1,4 +1,4 @@
-import Accordion from "./Accordion";
+import Accordion from "./Accordion.tsx";
 
 function AccordionSection() {
   const items = [
@@ -45,7 +45,7 @@ function AccordionSection() {
       <div className="my-16">
         <div className="flex flex-wrap items-center justify-center md:gap-8 lg:gap-10 gap-6">
           {items.map((element) => (
-            <Accordion subTitle={element.sub_title} title={element.title}>
+            <Accordion subTitle={element.sub_title} title={element.title} key={element.title}>
               {element.description}
             </Accordion>
           ))}

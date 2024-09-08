@@ -26,13 +26,13 @@ function Navbar() {
                 <a href={item.href}>{item.label}</a>
               </li>
             ))}
-            <a href="#" className="py-2 px-3 border rounded-md text-lg">
+            <a href="/#" className="py-2 px-3 border rounded-md text-lg">
               Request a quote
             </a>
           </ul>
 
           <div className="lg:hidden md:flex flex-col justify-end">
-            <button onClick={toggleNavbar}>
+            <button onClick={toggleNavbar} type="button">
               {mobileDrawerOpen ? <X /> : <Menu />}
             </button>
           </div>
@@ -47,7 +47,7 @@ function Navbar() {
               ))}
             </ul>
             <div className="flex space-x-6">
-              <a href="#" className="py-2 px-3 border rounded-md text-lg">
+              <a href="/#" className="py-2 px-3 border rounded-md text-lg">
                 Request a quote
               </a>
             </div>
