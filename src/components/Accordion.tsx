@@ -18,11 +18,13 @@ function Accordion({ subTitle, title, children }: Props) {
   if (isOpen) {
     return (
       <div className="ease-in-out duration-150 flex flex-col rounded-3xl lg:px-10 lg:py-10 px-5 py-5 border border-black shadow-[0px_3px_0px_0px_rgba(0,0,0)] bg-secondary">
-        <div className="w-full relative border-b border-black pb-8 mb-8">
-          <button
+        <button
+          className="w-full relative border-b border-black pb-8 mb-8"
+          type="button"
+          onClick={toggleAccordion}
+        >
+          <div
             className="flex items-center"
-            onClick={toggleAccordion}
-            type="button"
           >
             <div className="lg:text-5xl md:text-3xl text-2xl ">{subTitle}</div>
             <div className="ml-5 lg:text-2xl md:text-xl text-md md:font-normal ">
@@ -33,8 +35,8 @@ function Accordion({ subTitle, title, children }: Props) {
               alt="open"
               className="lg:w-14 md:w-12 w-8 absolute right-0"
             />
-          </button>
-        </div>
+          </div>
+        </button>
 
         <p>{children}</p>
       </div>
@@ -43,11 +45,13 @@ function Accordion({ subTitle, title, children }: Props) {
 
   return (
     <div className="ease-in-out duration-150 flex flex-col rounded-3xl lg:px-10 lg:py-10 px-5 py-5 border border-black shadow-[0px_3px_0px_0px_rgba(0,0,0)] bg-neutral w-full">
-      <div className="w-full relative">
-        <button
+      <button
+        className="w-full relative"
+        onClick={toggleAccordion}
+        type="button"
+      >
+        <div
           className="flex items-center"
-          onClick={toggleAccordion}
-          type="button"
         >
           <div className="lg:text-5xl md:text-3xl text-2xl ">{subTitle}</div>
           <div className="ml-5 lg:text-2xl md:text-xl text-md md:font-normal ">
@@ -58,8 +62,8 @@ function Accordion({ subTitle, title, children }: Props) {
             alt="close"
             className="lg:w-14 md:w-12 w-8 absolute right-0"
           />
-        </button>
-      </div>
+        </div>
+      </button>
     </div>
   );
 }
