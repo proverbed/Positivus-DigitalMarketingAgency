@@ -2,7 +2,7 @@ import { TypeEnum } from "../Type.ts";
 
 type Props = {
   title: string;
-  type: TypeEnum;
+  type?: TypeEnum;
 };
 
 function Button({ title, type = TypeEnum.Primary }: Props) {
@@ -32,3 +32,6 @@ function Button({ title, type = TypeEnum.Primary }: Props) {
 }
 
 export default Button;
+Button.defaultProps = {
+  type: TypeEnum.Primary
+};
